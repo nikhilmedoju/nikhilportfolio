@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medoju Nikhil - Resume</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.55;
+            color: #222;
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 36px 44px;
+            background: #fff;
+            font-size: 13.5px;
+        }
+
+        /* Header */
+        .resume-header { text-align: center; margin-bottom: 22px; border-bottom: 2.5px solid #1a73e8; padding-bottom: 16px; }
+        .resume-header h1 { font-size: 26px; letter-spacing: 3px; text-transform: uppercase; color: #111; margin-bottom: 4px; }
+        .resume-header .role { font-size: 15px; font-weight: 600; color: #1a73e8; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 8px; }
+        .resume-header .contact { font-size: 12.5px; color: #444; line-height: 1.7; }
+        .resume-header .contact a { color: #1a73e8; text-decoration: none; }
+
+        /* Section */
+        .section { margin-bottom: 18px; }
+        .section-title {
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #1a73e8;
+            border-bottom: 1.5px solid #dde3ea;
+            padding-bottom: 4px;
+            margin-bottom: 10px;
+        }
+
+        /* Content */
+        p { margin-bottom: 8px; text-align: justify; }
+        ul { padding-left: 18px; margin-bottom: 8px; }
+        li { margin-bottom: 4px; }
+        strong { color: #111; }
+
+        /* Skills table */
+        .skills-table { width: 100%; border-collapse: collapse; margin-bottom: 4px; }
+        .skills-table td { padding: 3px 0; vertical-align: top; font-size: 13.5px; }
+        .skills-table td:first-child { width: 200px; font-weight: 600; color: #111; }
+
+        /* Project block */
+        .project { margin-bottom: 12px; }
+        .project-title { font-weight: 700; font-size: 14px; color: #111; margin-bottom: 3px; }
+        .project ul { margin-top: 2px; }
+
+        /* Experience block */
+        .exp-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 3px; }
+        .exp-header .role-title { font-weight: 700; font-size: 14px; color: #111; }
+        .exp-header .company { font-weight: 600; color: #555; }
+
+        /* Education */
+        .edu-item { margin-bottom: 8px; }
+        .edu-item .degree { font-weight: 700; color: #111; }
+        .edu-item .school { color: #555; font-size: 13px; }
+
+        /* Certifications */
+        .cert-list { columns: 2; column-gap: 24px; }
+        .cert-list li { break-inside: avoid; }
+
+        /* Languages */
+        .lang-list { display: flex; gap: 32px; flex-wrap: wrap; }
+        .lang-item { font-size: 13.5px; }
+        .lang-item .lang-name { font-weight: 600; color: #111; }
+        .lang-item .lang-level { color: #555; }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <div class="resume-header">
+        <h1>Medoju Nikhil</h1>
+        <div class="role">Data Engineer</div>
+        <div class="contact">
+            +91 9398625152 &nbsp;|&nbsp; <a href="mailto:nikhilmedoju05@gmail.com">nikhilmedoju05@gmail.com</a> &nbsp;|&nbsp;
+            <a href="https://linkedin.com/in/nikhil-medoju-8470383a0">LinkedIn</a> &nbsp;|&nbsp;
+            <a href="https://github.com/nikhilmedoju">GitHub</a>
+        </div>
+    </div>
+
+    <!-- PROFESSIONAL SUMMARY -->
+    <div class="section">
+        <div class="section-title">Professional Summary</div>
+        <p>Analytical and detail-oriented Data Engineer with hands-on experience in data analysis, visualization, and machine learning. Proven ability to transform complex datasets into actionable business insights using Python, SQL, and Power BI. Adept at building scalable ML pipelines, stakeholder communication, and driving data-backed decisions.</p>
+    </div>
+
+    <!-- TECHNICAL SKILLS -->
+    <div class="section">
+        <div class="section-title">Technical Skills</div>
+        <table class="skills-table">
+            <tr>
+                <td>Data Analysis &amp; Viz</td>
+                <td>Excel (Pivot Tables, VLOOKUP, Data Cleaning), Power BI (Dashboards, KPI Tracking)</td>
+            </tr>
+            <tr>
+                <td>Databases &amp; Querying</td>
+                <td>SQL, MySQL (Joins, Aggregations, Subqueries, ETL)</td>
+            </tr>
+            <tr>
+                <td>Programming</td>
+                <td>Python (Pandas, NumPy, Exploratory Data Analysis)</td>
+            </tr>
+            <tr>
+                <td>Machine Learning</td>
+                <td>Scikit-Learn, Na&iuml;ve Bayes, KNN, Decision Tree, MLP, Ensemble Methods</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- KEY PROJECTS -->
+    <div class="section">
+        <div class="section-title">Key Projects</div>
+
+        <div class="project">
+            <div class="project-title">Fraudulent Job Post Detection using Machine Learning</div>
+            <ul>
+                <li>Engineered an ML classification pipeline using NLP and Scikit-Learn to flag fraudulent job postings.</li>
+                <li>Processed 10,000+ unstructured text entries with advanced NLP techniques.</li>
+                <li>Evaluated and tuned Na&iuml;ve Bayes, KNN, Decision Tree, and MLP models.</li>
+                <li><strong>Result:</strong> Increased accuracy from 78% to 93% (+15%) with 20% fewer false positives.</li>
+            </ul>
+        </div>
+
+        <div class="project">
+            <div class="project-title">Dense Passage Retrieval for Open-Domain Question Answering</div>
+            <ul>
+                <li>Architected a DPR system using Deep Learning and Vector Search for large document corpora.</li>
+                <li>Implemented data cleaning and validation pipelines for unstructured text.</li>
+                <li><strong>Result:</strong> Improved retrieval accuracy by 15% over baseline and reduced query latency.</li>
+            </ul>
+        </div>
+
+        <div class="project">
+            <div class="project-title">E-Commerce Sales Analytics Dashboard</div>
+            <ul>
+                <li>Built an interactive BI solution connecting Power BI to SQL databases handling millions of rows.</li>
+                <li>Executed complex SQL joins and aggregations for real-time revenue and engagement tracking.</li>
+                <li><strong>Result:</strong> Identified seasonal trends leading to 25% improvement in inventory allocation.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- EXPERIENCE -->
+    <div class="section">
+        <div class="section-title">Experience</div>
+        <div class="exp-header">
+            <span class="role-title">Data Analyst Intern</span>
+            <span class="company">TATA</span>
+        </div>
+        <ul>
+            <li>Analyzed large datasets to identify critical business trends, metrics, and anomalies.</li>
+            <li>Collaborated with senior analysts to design dynamic business reports and dashboards.</li>
+            <li>Presented data-driven findings to stakeholders, reducing operational friction.</li>
+        </ul>
+    </div>
+
+    <!-- EDUCATION -->
+    <div class="section">
+        <div class="section-title">Education</div>
+        <div class="edu-item">
+            <span class="degree">Master of Computer Applications (MCA)</span><br>
+            <span class="school">Aurora PG College, Hyderabad &mdash; 2024 &ndash; 2026</span>
+        </div>
+        <div class="edu-item">
+            <span class="degree">Bachelor of Science (Chemistry)</span><br>
+            <span class="school">Government Degree College, Siddipet &mdash; 2020 &ndash; 2024</span>
+        </div>
+        <div class="edu-item">
+            <span class="degree">Intermediate (MPC)</span><br>
+            <span class="school">SR Junior College, Hanamkonda &mdash; 2020</span>
+        </div>
+    </div>
+
+    <!-- CERTIFICATIONS -->
+    <div class="section">
+        <div class="section-title">Certifications</div>
+        <ul class="cert-list">
+            <li>Data Analytics &mdash; Cisco</li>
+            <li>Data Analytics Job Simulation &mdash; Deloitte</li>
+            <li>GenAI Powered Data Analytics &mdash; TCS</li>
+            <li>Python Essentials &mdash; Cisco</li>
+            <li>AI Fundamentals &mdash; IBM SkillsBuild</li>
+        </ul>
+    </div>
+
+    <!-- LANGUAGES -->
+    <div class="section">
+        <div class="section-title">Languages</div>
+        <div class="lang-list">
+            <div class="lang-item"><span class="lang-name">English</span> &mdash; <span class="lang-level">Professional Proficiency</span></div>
+            <div class="lang-item"><span class="lang-name">Hindi</span> &mdash; <span class="lang-level">Professional Proficiency</span></div>
+            <div class="lang-item"><span class="lang-name">Telugu</span> &mdash; <span class="lang-level">Native</span></div>
+        </div>
+    </div>
+
+</body>
+</html>
